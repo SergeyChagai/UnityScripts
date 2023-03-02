@@ -1,6 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,10 +15,10 @@ public class Comparer : MonoBehaviour
 
     public void Compare()
     {
-        if (firstNumberField.text.Length == 0 || secondNumberField.text.Length == 0) 
+        if (firstNumberField.text.Length == 0 || secondNumberField.text.Length == 0)
         {
             Debug.LogError("Empty field");
-            return; 
+            return;
         }
         decimal.TryParse(firstNumberField.text, out var firstNumber);
         decimal.TryParse(secondNumberField.text, out var secondNumber);
@@ -29,4 +32,5 @@ public class Comparer : MonoBehaviour
         else if (firstNumber < secondNumber) return secondNumber.ToString();
         else return "Equals";
     }
+
 }

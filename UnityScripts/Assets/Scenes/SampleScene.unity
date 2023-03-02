@@ -1011,12 +1011,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 386834718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49e2f6f7b8d4d6a45914db9031d6201c, type: 3}
+  m_Script: {fileID: 11500000, guid: 57201350ece068b4e89827a4f31d9db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   firstNumberField: {fileID: 1656148028}
   secondNumberField: {fileID: 738932949}
-  operationSelector: {fileID: 0}
   responseField: {fileID: 37913619}
 --- !u!1 &387787492
 GameObject:
@@ -1785,7 +1784,7 @@ MonoBehaviour:
   m_OnDidEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 386834720}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
         m_MethodName: Calculate
         m_Mode: 1
@@ -3707,7 +3706,7 @@ MonoBehaviour:
   m_OnDidEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 386834720}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
         m_MethodName: Calculate
         m_Mode: 1
